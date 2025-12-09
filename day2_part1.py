@@ -15,15 +15,11 @@ def repeated(num):
     s = str(num)
     n = len(s)
 
-    for size in range(1, n):        
-        if n % size == 0:           
-            part = s[:size]
-            repeats = n // size
+    if n % 2 != 0:
+        return False
 
-            if part * repeats == s and repeats >= 2:
-                return True
-
-    return False
+    half = n // 2
+    return s[:half] == s[half:]
 
 
 pattern = input()
