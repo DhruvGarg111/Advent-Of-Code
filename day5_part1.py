@@ -20,7 +20,6 @@ def fresh(arr , food):
     return ans
 
 
-
 ranges = []
 values = []
 
@@ -40,8 +39,3 @@ while True:
 
 
 print("ans: ", fresh(ranges, values))
-
-
-
-
-    
